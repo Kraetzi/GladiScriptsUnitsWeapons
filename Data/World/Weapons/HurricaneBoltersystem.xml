@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<weapon>
+	<model>
+		<projectileWeapon fireSound="Weapons/HeavyBolter"
+		 		fireSoundCount="4"
+				muzzleCount="2"/>
+	</model>	
+	<modifiers>
+		<modifier>
+			<effects>
+				<attacks add="9"/>
+				<rangedArmorPenetration add="2"/> <!-- %rangedArmorPenetration add armorPiercing=4 -->
+				<rangedDamage add="2"/> <!-- %rangedDamage add strength=5 -->
+				<strengthDamage base="0"/>
+			</effects>
+		</modifier>
+	</modifiers>
+	<target rangeMax="2"/>
+	<traits>
+		<trait name="AstraMilitarum/BoltDamage" requiredUpgrade="AstraMilitarum/BoltDamage"/>
+		<trait name="ThousandSons/BoltDamage" requiredUpgrade="ThousandSons/BoltDamage"/>
+		<trait name="SpaceMarines/BoltDamage" requiredUpgrade="SpaceMarines/BoltDamage"/>
+		<trait name="Deathwatch/BoltDamage" requiredUpgrade="Deathwatch/BoltDamage"/>
+		<trait name="Ultramarines/BoltDamage" requiredUpgrade="Ultramarines/BoltDamage"/>
+		<trait name="SpaceWolves/BoltDamage" requiredUpgrade="SpaceWolves/BoltDamage"/>
+		<trait name="BloodAngels/BoltDamage" requiredUpgrade="BloodAngels/BoltDamage"/>
+		<trait name="RapidFire"/>
+		<trait name="BoltWeapon"/>
+		<trait name="HeavyWeapon"/>
+		<trait name="TwinLinked"/>
+	</traits>
+</weapon>

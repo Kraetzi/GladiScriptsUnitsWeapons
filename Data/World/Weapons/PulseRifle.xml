@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<weapon>
+	<model>
+		<projectileWeapon fireSound="Weapons/PulseRifle" fireSoundCount="3" muzzleFlashesBlueprint="Effects/PlasmaMuzzleFlashes" directionalMuzzleFlashesBlueprint="Effects/PlasmaDirectionalMuzzleFlashes" projectilesBlueprint="Effects/PlasmaProjectiles" explosionsBlueprint="Effects/PlasmaExplosions" explosionsEmitterBlueprint="Effects/NecronExplosionsEmitter" />
+	</model>
+	<modifiers>
+		<modifier>
+			<effects>
+				<attacks add="2" />
+				<rangedArmorPenetration add="1" /> 
+				<rangedDamage add="2" /> 
+				<strengthDamage base="0" />
+			</effects>
+		</modifier>
+	</modifiers>
+	<target rangeMax="4" />
+	<traits>
+		<trait name="RapidFire" />
+		<trait name="Tau/LasDamage" requiredUpgrade="Tau/LasDamage" />
+	</traits>
+</weapon>
