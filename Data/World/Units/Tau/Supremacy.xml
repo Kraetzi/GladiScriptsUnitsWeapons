@@ -1,84 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <unit dlc="Supplement5">
 	<model>
-		<unit mesh="Units/Tau/Stormsurge"
-				material="Units/Tau/Stormsurge"
-				idleAnimation="Units/Tau/StormsurgeIdle"
-				idleAnimationCount="3"
-				idleContinuously="1"
-				scale="0.68 0.68 0.68"
-				explosionsBone="BloodBone"
-				walker="1"/>
+		<unit mesh="Units/Tau/Stormsurge" material="Units/Tau/Stormsurge" idleAnimation="Units/Tau/StormsurgeIdle" idleAnimationCount="3" idleContinuously="1" scale="0.68 0.68 0.68" explosionsBone="BloodBone" walker="1" />
 	</model>
 	<weapons>
 		<weapon name="PulseDriverCannon" count="6">
 			<model>
-				<projectileWeapon muzzleBone=".PulseDriverCannonMuzzle"
-						fireInterval="0.5"/>
+				<projectileWeapon muzzleBone=".PulseDriverCannonMuzzle" fireInterval="0.5" />
 			</model>
 		</weapon>
 		<weapon name="TwinLinkedSmartMissileSystem">
 			<model>
-				<missileWeapon muzzleBone=".SmartMissileMuzzle" muzzleCount="2"
-						missileScale="0.5" fireInterval="0.55"/>
+				<missileWeapon muzzleBone=".SmartMissileMuzzle" muzzleCount="2" missileScale="0.5" fireInterval="0.55" />
 			</model>
 		</weapon>
-		<weapon name="Stomp" slotName="Stomp" enabled="0"/>
+		<weapon name="Stomp" slotName="Stomp" enabled="0" />
 	</weapons>
 	<modifiers>
 		<modifier visible="0">
 			<effects>
-				<armor base="10"/> <!-- %armor base armor=3+ -->
-				<energyCost base="100.0"/> <!-- %energyCost base tier=10 factor=0.5 -->
-				<hitpointsMax base="776.0"/> <!-- %hitpointsMax base toughness=6 wounds=8 -->
-				<meleeAccuracy base="4"/> <!-- %meleeAccuracy base weaponSkill=2 -->
-				<meleeAttacks base="2"/>
-				<strengthDamage base="4"/> <!-- %strengthDamage base strength=6 -->
-				<moraleMax base="10"/> <!-- %moraleMax base leadership=8 -->
-				<movementMax base="3"/>
-				<oreCost base="140.0"/> <!-- %oreCost base tier=10 factor=0.5 -->
-				<oreUpkeep base="10.0"/> <!-- %oreUpkeep base tier=10 factor=1 -->
-				<productionCost base="70.0"/> <!-- %productionCost base tier=10 factor=1 -->
-				<rangedAccuracy base="8"/> <!-- %rangedAccuracy base ballisticSkill=3 -->
+				<armor base="10" /> 
+				<energyCost base="100.0" /> 
+				<hitpointsMax base="776.0" /> 
+				<meleeAccuracy base="4" /> 
+				<meleeAttacks base="2" />
+				<strengthDamage base="4" /> 
+				<moraleMax base="10" /> 
+				<movementMax base="3" />
+				<oreCost base="140.0" /> 
+				<oreUpkeep base="10.0" /> 
+				<productionCost base="70.0" /> 
+				<rangedAccuracy base="8" /> 
 			</effects>
 		</modifier>
 	</modifiers>
 	<strategyModifiers>
 		<modifier>
 			<effects>
-				<increaseColonizersScore base="1.0"/>
-				<increaseSupportScore base="1.0"/>
+				<increaseColonizersScore base="1.0" />
+				<increaseSupportScore base="1.0" />
 			</effects>
 		</modifier>
 	</strategyModifiers>
 	<actions>
 		<attack>
 			<model>
-				<action	animation="Units/Tau/StormsurgeAttack"
-						beginFire="0.85"
-						endFire="1.95"/>
+				<action animation="Units/Tau/StormsurgeAttack" beginFire="0.85" endFire="1.95" />
 			</model>		
 		</attack>
 		<die>
 			<model>
-				<action animation="Units/Tau/StormsurgeDie0"
-						sound="Units/HugeArmoredDie"
-						soundCount="1"
-						soundDelay="1.2"
-						voiceSound="Units/Tau/MonstrousWalkerDie"
-						voiceSoundCount="1"/>
+				<action animation="Units/Tau/StormsurgeDie0" sound="Units/HugeArmoredDie" soundCount="1" soundDelay="1.2" voiceSound="Units/Tau/MonstrousWalkerDie" voiceSoundCount="1" />
 			</model>		
 		</die>
 		<idle>
 			<model>
-				<action animationSpeed="1.0"/>
+				<action animationSpeed="1.0" />
 			</model>
 		</idle>
 		<move>
 			<model>
-				<action animation="Units/Tau/StormsurgeMove"
-						sound="Units/Tau/MonstrousWalkerMove"
-						soundCount="1"/>
+				<action animation="Units/Tau/StormsurgeMove" sound="Units/Tau/MonstrousWalkerMove" soundCount="1" />
 			</model>
 		</move>
 		<auraOfFear passive="1">
@@ -89,7 +71,7 @@
 							<modifiers>
 								<modifier>
 									<effects>
-										<addTrait name="Fear"/>
+										<addTrait name="Fear" />
 									</effects>
 								</modifier>
 							</modifiers>
@@ -98,11 +80,9 @@
 				</selfTarget>
 			</beginTargets>
 		</auraOfFear>
-		<hammerOfWrath consumedActionPoints="0" consumedMovement="0"
-				cooldown="3"
-				requiredUpgrade="Tau/HammerOfWrath">
+		<hammerOfWrath consumedActionPoints="0" consumedMovement="0" cooldown="3" requiredUpgrade="Tau/HammerOfWrath">
 			<model>
-				<action sound="Actions/PsychicBuff"/>
+				<action sound="Actions/PsychicBuff" />
 			</model>
 			<beginTargets>
 				<selfTarget>
@@ -111,7 +91,7 @@
 							<modifiers>
 								<modifier>
 									<effects>
-										<addTrait name="HammerOfWrath" duration="1"/>
+										<addTrait name="HammerOfWrath" duration="1" />
 									</effects>
 								</modifier>
 							</modifiers>
@@ -120,24 +100,21 @@
 				</selfTarget>
 			</beginTargets>
 		</hammerOfWrath>
-		<stomp consumedActionPoints="0"
-				cooldown="1"
-				requiredActionPoints="0"
-				weaponSlotName="Stomp"/>
+		<stomp consumedActionPoints="0" cooldown="1" requiredActionPoints="0" weaponSlotName="Stomp" />
 	</actions>
 	<traits>
-		<trait name="Fearless"/>
-		<trait name="FeelNoPain"/>
-		<trait name="Gargantuan"/>
-		<trait name="MonstrousCreature"/>
-		<trait name="MoveThroughCover"/>
-		<trait name="Relentless"/>
-		<trait name="Smash"/>
-		<trait name="Tau/StabilisingAnchors"/>
-		<trait name="Strikedown"/>
-		<trait name="Tau/SupportSystems" rank="2"/>
-		<trait name="ExtraInfantryArmour" requiredUpgrade="Tau/ExtraInfantryArmour"/>
-		<trait name="Oomph"/>
-		<trait name="Tier4"/>
+		<trait name="Fearless" />
+		<trait name="FeelNoPain" />
+		<trait name="Gargantuan" />
+		<trait name="MonstrousCreature" />
+		<trait name="MoveThroughCover" />
+		<trait name="Relentless" />
+		<trait name="Smash" />
+		<trait name="Tau/StabilisingAnchors" />
+		<trait name="Strikedown" />
+		<trait name="Tau/SupportSystems" rank="2" />
+		<trait name="ExtraInfantryArmour" requiredUpgrade="Tau/ExtraInfantryArmour" />
+		<trait name="Oomph" />
+		<trait name="Tier4" />
 	</traits>
 </unit>

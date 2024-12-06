@@ -1,27 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <weapon>
 	<model>
-		<projectileWeapon fireSound="Weapons/EarthshakerCannon"
-				fireSoundCount="3"
-				muzzleFlashesBlueprint="Effects/CannonMuzzleFlashes"/>
+		<projectileWeapon fireSound="Weapons/EarthshakerCannon" fireSoundCount="3" muzzleFlashesBlueprint="Effects/CannonMuzzleFlashes" />
 	</model>
 	<modifiers>
 		<modifier>
 			<effects>
-				<attacks add="8"/>
-				<rangedArmorPenetration add="5"/> <!-- %rangedArmorPenetration add armorPiercing=3 -->
-				<rangedDamage add="10"/> <!-- %rangedDamage add strength=9 -->
-				<strengthDamage base="0"/>
+				<attacks add="8" />
+				<rangedArmorPenetration add="5" /> 
+				<rangedDamage add="10" /> 
+				<strengthDamage base="0" />
 			</effects>
 		</modifier>
 	</modifiers>
-	<target rangeMin="3" rangeMax="7"/>
+	<target rangeMin="3" rangeMax="7" />
 	<traits>
-		<trait name="Barrage"/>
-		<trait name="AstraMilitarum/BlastDamage" requiredUpgrade="AstraMilitarum/BlastDamage"/>
-		<trait name="SpaceMarines/BlastDamage" requiredUpgrade="SpaceMarines/BlastDamage"/>
-		<trait name="IronWarriors/BlastDamage" requiredUpgrade="IronWarriors/BlastDamage"/>
-		<trait name="LargeBlast"/>
-		<trait name="Ordnance"/>
+		<trait name="Barrage" />
+		<trait name="AstraMilitarum/BlastDamage" requiredUpgrade="AstraMilitarum/BlastDamage" />
+		<trait name="SpaceMarines/BlastDamage" requiredUpgrade="SpaceMarines/BlastDamage" />
+		<trait name="IronWarriors/BlastDamage" requiredUpgrade="IronWarriors/BlastDamage" />
+		<trait name="LargeBlast" />
+		<trait name="Ordnance" />
 	</traits>
 </weapon>

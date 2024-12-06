@@ -1,122 +1,105 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <unit dlc="Supplement5" productionWeight="0.01">
 	<model>
-		<unit mesh="Units/Tau/BuilderDrone"
-				material="Units/Tau/BuilderDrone"
-				idleAnimation="Units/Tau/BuilderDroneIdle"
-				idleAnimationCount="3"
-				idleContinuously="1"
-				position="0 0 16"
-				scale="0.35 0.35 0.35"
-				explosionsBone="BloodBone"/>
+		<unit mesh="Units/Tau/BuilderDrone" material="Units/Tau/BuilderDrone" idleAnimation="Units/Tau/BuilderDroneIdle" idleAnimationCount="3" idleContinuously="1" position="0 0 16" scale="0.35 0.35 0.35" explosionsBone="BloodBone" />
 	</model>
-	<group size="36" rowSize="8" memberDeltaX="30" memberDeltaY="30"/>
+	<group size="36" rowSize="8" memberDeltaX="30" memberDeltaY="30" />
 	<weapons>
 	</weapons>
 	<modifiers>
 		<modifier visible="0">
 			<effects>
-				<armor base="6"/> <!-- %armor base armor=4+ -->
-				<energyCost base="20.0"/> <!-- %energyCost base tier=6 factor=0.5 -->
-				<hitpointsMax base="3.0"/> <!-- %hitpointsMax base toughness=3 wounds=1 -->
-				<meleeAccuracy base="4"/> <!-- %meleeAccuracy base weaponSkill=2 -->
-				<meleeAttacks base="1"/>
-				<strengthDamage base="1"/> <!-- %strengthDamage base strength=3 -->
-				<moraleMax base="6"/> <!-- %moraleMax base leadership=6 -->
-				<movementMax base="3"/>
-				<oreCost base="20.0"/> <!-- %oreCost base tier=6 factor=0.5 -->
-				<oreUpkeep base="2.0"/> <!-- %oreUpkeep base tier=6 factor=1 -->
-				<productionCost base="36.0"/> <!-- %productionCost base tier=6 factor=1 -->
-				<rangedAccuracy base="4"/> <!-- %rangedAccuracy base ballisticSkill=2 -->
+				<armor base="6" /> 
+				<energyCost base="20.0" /> 
+				<hitpointsMax base="3.0" /> 
+				<meleeAccuracy base="4" /> 
+				<meleeAttacks base="1" />
+				<strengthDamage base="1" /> 
+				<moraleMax base="6" /> 
+				<movementMax base="3" />
+				<oreCost base="20.0" /> 
+				<oreUpkeep base="2.0" /> 
+				<productionCost base="36.0" /> 
+				<rangedAccuracy base="4" /> 
 			</effects>
 		</modifier>
 	</modifiers>
 	<strategyModifiers>
 		<modifier>
 			<effects>
-				<increaseColonizersScore base="1.0"/>
-				<increaseSupportScore base="1.0"/>
+				<increaseColonizersScore base="1.0" />
+				<increaseSupportScore base="1.0" />
 			</effects>
 		</modifier>
 	</strategyModifiers>
 	<actions>
 		<attack>
 			<model>
-				<action/>
+				<action />
 			</model>
 		</attack>
 		<die>
 			<model>
-				<action animation="Units/Tau/BuilderDroneDie"
-						animationCount="2"
-						soundDelay="0"
-						sound="Units/Tau/DroneDie"
-						soundCount="1"/>
+				<action animation="Units/Tau/BuilderDroneDie" animationCount="2" soundDelay="0" sound="Units/Tau/DroneDie" soundCount="1" />
 			</model>		
 		</die>
 		<idle>
 			<model>
-				<action animationSpeed="1.0"/>
+				<action animationSpeed="1.0" />
 			</model>
 		</idle>
 		<move>
 			<model>
-				<action animation=""
-						sound="Units/Tau/DroneMove"
-						soundCount="1"/>
+				<action animation="" sound="Units/Tau/DroneMove" soundCount="1" />
 			</model>
 		</move>
 		<foundCity>
 			<model>
-				<action animation=""
-						sound="Actions/FoundCity"/>
+				<action animation="" sound="Actions/FoundCity" />
 			</model>
 			<modifiers>
 				<modifier visible="0">
 					<effects>
-						<influenceCost base="40"/>
-						<oreCost base="40"/>
+						<influenceCost base="40" />
+						<oreCost base="40" />
 					</effects>
 				</modifier>
 			</modifiers>
 		</foundCity>
-		<clearTileUnitAbility cooldown="1"
-				icon="Actions/ClearTile"
-				name="ClearTile">
+		<clearTileUnitAbility cooldown="1" icon="Actions/ClearTile" name="ClearTile">
 			<model>
-				<action animation=""/>
+				<action animation="" />
 			</model>
 			<beginTargets>
 				<target rangeMax="1">
-					<conditions/>
-					<areas/>
+					<conditions />
+					<areas />
 				</target>
 			</beginTargets>
 			<modifiers>
 				<modifier visible="0">
 					<effects>
-						<influenceCost base="5"/>
-						<oreCost base="5"/>
+						<influenceCost base="5" />
+						<oreCost base="5" />
 					</effects>
 				</modifier>
 			</modifiers>
 		</clearTileUnitAbility>
 		<repair cooldown="1">
 			<model>
-				<action animation=""
-						sound="Actions/Heal"/>
+				<action animation="" sound="Actions/Heal" />
 			</model>
 			<beginTargets>
 				<target rangeMax="1">
 					<conditions>
 						<unit>
-							<allied/>
-							<damaged/>
+							<allied />
+							<damaged />
 						</unit>
 						<unit match="Any">
-							<faction name="Tau"/>
-							<trait name="Fortification"/>
-							<trait name="Vehicle"/>
+							<faction name="Tau" />
+							<trait name="Fortification" />
+							<trait name="Vehicle" />
 						</unit>
 					</conditions>
 					<areas>
@@ -124,7 +107,7 @@
 							<modifiers>
 								<modifier>
 									<effects>
-										<hitpoints add="96"/>
+										<hitpoints add="96" />
 									</effects>
 								</modifier>
 							</modifiers>
@@ -133,18 +116,15 @@
 				</target>
 			</beginTargets>
 		</repair>
-		<constructTidewallGunrig cooldown="10"
-				icon="Units/Tau/TidewallGunrig"
-				requiredUpgrade="Tau/TidewallGunrig">
+		<constructTidewallGunrig cooldown="10" icon="Units/Tau/TidewallGunrig" requiredUpgrade="Tau/TidewallGunrig">
 			<model>
-				<action animation=""
-						sound="Actions/DeployDrone"/>
+				<action animation="" sound="Actions/DeployDrone" />
 			</model>
 			<modifiers>
 				<modifier visible="0">
 					<effects>
-						<energyCost base="40"/>
-						<oreCost base="40"/>
+						<energyCost base="40" />
+						<oreCost base="40" />
 					</effects>
 				</modifier>
 			</modifiers>
@@ -152,8 +132,8 @@
 				<target rangeMax="1">
 					<conditions>
 						<tile>
-							<noUnit/>
-							<noFeature name="GravityWaves"/>
+							<noUnit />
+							<noFeature name="GravityWaves" />
 						</tile>
 					</conditions>
 					<areas>
@@ -161,7 +141,7 @@
 							<modifiers>
 								<modifier>
 									<effects>
-										<addUnit name="Tau/TidewallGunrig"/>
+										<addUnit name="Tau/TidewallGunrig" />
 									</effects>
 								</modifier>
 							</modifiers>
@@ -172,8 +152,8 @@
 		</constructTidewallGunrig>
 	</actions>
 	<traits>
-		<trait name="JetPack"/>
-		<trait name="ExtraInfantryArmour" requiredUpgrade="Tau/ExtraInfantryArmour"/>
-		<trait name="Tier1"/>
+		<trait name="JetPack" />
+		<trait name="ExtraInfantryArmour" requiredUpgrade="Tau/ExtraInfantryArmour" />
+		<trait name="Tier1" />
 	</traits>
 </unit>

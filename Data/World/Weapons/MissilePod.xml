@@ -1,22 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <weapon>
 	<model>
-		<missileWeapon fireSound="Weapons/HunterKillerMissile"
-				fireSoundCount="3"/>
+		<missileWeapon fireSound="Weapons/HunterKillerMissile" fireSoundCount="3" />
 	</model>
 	<modifiers>
 		<modifier>
 			<effects>
-				<attacks add="2"/>
-				<rangedArmorPenetration add="2"/> <!-- %rangedArmorPenetration add armorPiercing=4 -->
-				<rangedDamage add="4"/> <!-- %rangedDamage add strength=7 -->
-				<strengthDamage base="0"/>
+				<attacks add="2" />
+				<rangedArmorPenetration add="2" /> 
+				<rangedDamage add="3" /> 
+				<strengthDamage base="0" />
 			</effects>
 		</modifier>
 	</modifiers>
-	<target rangeMax="2"/>
+	<target rangeMax="4" />
 	<traits>
-		<trait name="Assault"/>
-		<trait name="Tau/BlastDamage" requiredUpgrade="Tau/BlastDamage"/>
+		<trait name="Assault" />
+		<trait name="Tau/BlastDamage" requiredUpgrade="Tau/BlastDamage" />
 	</traits>
 </weapon>

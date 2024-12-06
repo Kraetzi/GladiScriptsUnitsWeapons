@@ -1,28 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <weapon>
 	<model>
-		<projectileWeapon explosionsBlueprint="Effects/PlasmaExplosions"
-				explosionsEmitterBlueprint="Effects/NecronExplosionsEmitter"
-				fireSound="Weapons/PlasmaPistol"
-				fireSoundCount="3"
-				muzzleFlashesBlueprint="Effects/PlasmaMuzzleFlashes"
-				directionalMuzzleFlashesBlueprint="Effects/PlasmaDirectionalMuzzleFlashes"
-				projectilesBlueprint="Effects/PlasmaProjectiles"/>
+		<projectileWeapon explosionsBlueprint="Effects/PlasmaExplosions" explosionsEmitterBlueprint="Effects/NecronExplosionsEmitter" fireSound="Weapons/PlasmaPistol" fireSoundCount="3" muzzleFlashesBlueprint="Effects/PlasmaMuzzleFlashes" directionalMuzzleFlashesBlueprint="Effects/PlasmaDirectionalMuzzleFlashes" projectilesBlueprint="Effects/PlasmaProjectiles" />
 	</model>
 	<modifiers>
 		<modifier>
 			<effects>
-				<attacks add="2"/>
-				<rangedArmorPenetration add="6"/> <!-- %rangedArmorPenetration add armorPiercing=2 -->
-				<rangedDamage add="3"/> <!-- %rangedDamage add strength=6 -->
-				<strengthDamage base="0"/>
+				<attacks add="2" />
+				<rangedArmorPenetration add="6" /> 
+				<rangedDamage add="3" /> 
+				<strengthDamage base="0" />
 			</effects>
 		</modifier>
 	</modifiers>
-	<target rangeMax="2"/>
+	<target rangeMax="2" />
 	<traits>
-		<trait name="Tau/LasDamage" requiredUpgrade="Tau/LasDamage"/>
-		<trait name="RapidFire"/>
-		<trait name="TwinLinked"/>
+		<trait name="Tau/LasDamage" requiredUpgrade="Tau/LasDamage" />
+		<trait name="RapidFire" />
+		<trait name="TwinLinked" />
 	</traits>
 </weapon>

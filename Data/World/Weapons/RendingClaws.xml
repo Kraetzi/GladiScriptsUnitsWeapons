@@ -1,19 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <weapon>
 	<model>
-		<weapon fireSound="Weapons/RendingClaws"
-				fireSoundCount="3"/>
+		<weapon fireSound="Weapons/RendingClaws" fireSoundCount="3" />
 	</model>
 	<modifiers>
 		<modifier>
 			<effects>
-				<meleeArmorPenetration add="1"/> <!-- %meleeArmorPenetration add armorPiercing=5 -->
+				<meleeArmorPenetration add="1" /> 
 			</effects>
 		</modifier>
 	</modifiers>
 	<traits>
-		<trait name="Tyranids/MeleeDamage" requiredUpgrade="Tyranids/MeleeDamage"/>
-		<trait name="Melee"/>
-		<trait name="Rending"/>
+		<trait name="Tyranids/MeleeDamage" requiredUpgrade="Tyranids/MeleeDamage" />
+		<trait name="Melee" />
+		<trait name="Rending" />
 	</traits>
 </weapon>

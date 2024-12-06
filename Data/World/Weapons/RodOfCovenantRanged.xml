@@ -1,23 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <weapon icon="Weapons/RodOfCovenant">
 	<model>
-		<beamWeapon fireSound="Weapons/RodOfCovenantRanged"
-		 		fireSoundCount="3"
-		 		beamsBlueprint="Effects/MoltenBeam"
-		 		muzzleFlashesBlueprint="Effects/LightMuzzleFlashes"/>
+		<beamWeapon fireSound="Weapons/RodOfCovenantRanged" fireSoundCount="3" beamsBlueprint="Effects/MoltenBeam" muzzleFlashesBlueprint="Effects/LightMuzzleFlashes" />
 	</model>
 	<modifiers>
 		<modifier>
 			<effects>
-				<attacks add="2"/>
-				<rangedArmorPenetration add="6"/> <!-- %rangedArmorPenetration add armorPiercing=2 -->
-				<rangedDamage add="2"/> <!-- %rangedDamage add strength=5 -->
-				<strengthDamage base="0"/>
+				<attacks add="2" />
+				<rangedArmorPenetration add="6" /> 
+				<rangedDamage add="2" /> 
+				<strengthDamage base="0" />
 			</effects>
 		</modifier>
 	</modifiers>
-	<target rangeMax="1"/>
+	<target rangeMax="1" />
 	<traits>
-		<trait name="Assault"/>
+		<trait name="Assault" />
 	</traits>
 </weapon>

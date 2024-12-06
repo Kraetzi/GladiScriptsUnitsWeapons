@@ -1,28 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <weapon>
 	<model>
-		<flamerWeapon fireSound="Weapons/Baleflamer"
-				fireSoundCount="3"
-				flamesBlueprint="Effects/Baleflamer"
-		 		flamesEmitterBlueprint="Effects/BaleflamerEmitter"/>
+		<flamerWeapon fireSound="Weapons/Baleflamer" fireSoundCount="3" flamesBlueprint="Effects/Baleflamer" flamesEmitterBlueprint="Effects/BaleflamerEmitter" />
 	</model>
 	<modifiers>
 		<modifier>
 			<effects>
-				<attacks add="2"/>
-				<rangedArmorPenetration add="0"/> <!-- %rangedArmorPenetration add armorPiercing=- -->
-				<rangedDamage add="2"/> <!-- %rangedDamage add strength=5 -->
-				<strengthDamage base="0"/>
+				<attacks add="2" />
+				<rangedArmorPenetration add="0" /> 
+				<rangedDamage add="2" /> 
+				<strengthDamage base="0" />
 			</effects>
 		</modifier>
 	</modifiers>
-	<target rangeMax="-1"/>
+	<target rangeMax="-1" />
 	<traits>
-		<trait name="Assault"/>
-		<trait name="IgnoresCover"/>
-		<trait name="NoEscape"/>
-		<trait name="PsychicPower"/>
-		<trait name="PsychicLash"/>
-		<trait name="Template"/>
+		<trait name="Assault" />
+		<trait name="IgnoresCover" />
+		<trait name="NoEscape" />
+		<trait name="PsychicPower" />
+		<trait name="PsychicLash" />
+		<trait name="Template" />
 	</traits>
 </weapon>

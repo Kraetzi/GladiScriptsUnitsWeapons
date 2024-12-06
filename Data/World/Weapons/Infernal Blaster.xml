@@ -1,27 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <weapon>
 	<model>
-		<beamWeapon fireSound="Weapons/NeutronBlaster"
-		 		fireSoundCount="3"
-		 		beamsBlueprint="Effects/NeutronBlasterBeams"
-		 		beamsEmitterBlueprint="Effects/ParticleBeamsEmitter"
-		 		muzzleFlashesBlueprint="Effects/IonMuzzleFlashes"
-		 		explosionsBlueprint="Effects/PlasmaExplosions"
-				explosionsEmitterBlueprint="Effects/NecronExplosionsEmitter"/>
+		<beamWeapon fireSound="Weapons/NeutronBlaster" fireSoundCount="3" beamsBlueprint="Effects/NeutronBlasterBeams" beamsEmitterBlueprint="Effects/ParticleBeamsEmitter" muzzleFlashesBlueprint="Effects/IonMuzzleFlashes" explosionsBlueprint="Effects/PlasmaExplosions" explosionsEmitterBlueprint="Effects/NecronExplosionsEmitter" />
 	</model>
 	<modifiers>
 		<modifier>
 			<effects>
-				<attacks add="2"/>
-				<rangedArmorPenetration add="2"/> <!-- %rangedArmorPenetration add armorPiercing=3 -->
-				<rangedDamage add="1.5"/> <!-- %rangedDamage add strength=4 -->
-				<strengthDamage base="0"/>
+				<attacks add="2" />
+				<rangedArmorPenetration add="2" /> 
+				<rangedDamage add="1.5" /> 
+				<strengthDamage base="0" />
 			</effects>
 		</modifier>
 	</modifiers>
-	<target rangeMax="1"/>
+	<target rangeMax="1" />
 	<traits>
-		<trait name="Assault"/>
-		<trait name="Tau/LasDamage" requiredUpgrade="Tau/LasDamage"/>
+		<trait name="Assault" />
+		<trait name="Tau/LasDamage" requiredUpgrade="Tau/LasDamage" />
 	</traits>
 </weapon>

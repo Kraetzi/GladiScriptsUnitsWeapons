@@ -1,112 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <unit dlc="Supplement10">
 	<model>
-		<unit mesh="Units/Tau/TigerShark"
-				material="Units/Tau/TigerShark"
-				position="0 0 195"
-				idleAnimation="Units/Tau/TigerSharkIdle"
-				idleAnimationCount="3"
-				idleContinuously="1"
-				normalWeight="1.0"
-				scale="1.2 1.2 1.2"
-				explosionsBone="Hull"/>
+		<unit mesh="Units/Tau/TigerShark" material="Units/Tau/TigerShark" position="0 0 195" idleAnimation="Units/Tau/TigerSharkIdle" idleAnimationCount="3" idleContinuously="1" normalWeight="1.0" scale="1.2 1.2 1.2" explosionsBone="Hull" />
 	</model>	
 	<weapons>
-		<weapon name="TwinLinkedIonCannonStandard"
-				slotName="TwinLinkedIonCannonStandard">
+		<weapon name="TwinLinkedIonCannonStandard" slotName="TwinLinkedIonCannonStandard">
 			<model>
-				<beamWeapon muzzleBone="MuzzleCannon"
-						muzzleCount="2"
-						cycleMuzzles="0"
-						effectFaceWeight="0.75"/>
+				<beamWeapon muzzleBone="MuzzleCannon" muzzleCount="2" cycleMuzzles="0" effectFaceWeight="0.75" />
 			</model>
 		</weapon>			
-		<weapon name="TwinLinkedIonCannonOvercharged"
-				slotName="TwinLinkedIonCannonOvercharged"
-				enabled="0">
+		<weapon name="TwinLinkedIonCannonOvercharged" slotName="TwinLinkedIonCannonOvercharged" enabled="0">
 			<model>
-				<beamWeapon muzzleBone="MuzzleCannon"
-						muzzleCount="2"
-						cycleMuzzles="0"
-						effectFaceWeight="0.75"/>
+				<beamWeapon muzzleBone="MuzzleCannon" muzzleCount="2" cycleMuzzles="0" effectFaceWeight="0.75" />
 			</model>
 		</weapon>
 		<weapon name="TwinLinkedMissilePod">
 			<model>
-				<missileWeapon muzzleBone="MissilePod"
-						muzzleCount="6"
-						fireInterval="1.33"
-						missileScale="0.4"/>
+				<missileWeapon muzzleBone="MissilePod" muzzleCount="6" fireInterval="1.33" missileScale="0.4" />
 			</model>
 		</weapon>
 		<weapon name="BurstCannon" count="2">
 			<model>
-				<projectileWeapon muzzleBone="TurretMuzzle"
-						muzzleCount="2"
-						cycleMuzzles="0"/>
+				<projectileWeapon muzzleBone="TurretMuzzle" muzzleCount="2" cycleMuzzles="0" />
 			</model>
 		</weapon>
-		<weapon name="SeekerMissile" count="3" enabled="0"
-				 slotName="SeekerMissile0">
+		<weapon name="SeekerMissile" count="3" enabled="0" slotName="SeekerMissile0">
 			<model>
-				<missileWeapon muzzleBone="SeekerMissileL"
-						muzzleCount="3"
-						missileScale="0.7"
-						fireInterval="1.33"/>
+				<missileWeapon muzzleBone="SeekerMissileL" muzzleCount="3" missileScale="0.7" fireInterval="1.33" />
 			</model>
 		</weapon>
-		<weapon name="SeekerMissile" count="3" enabled="0"
-				 slotName="SeekerMissile1">
+		<weapon name="SeekerMissile" count="3" enabled="0" slotName="SeekerMissile1">
 			<model>
-				<missileWeapon muzzleBone="SeekerMissileR"
-						muzzleCount="3"
-						missileScale="0.7"
-						fireInterval="1.33"/>
+				<missileWeapon muzzleBone="SeekerMissileR" muzzleCount="3" missileScale="0.7" fireInterval="1.33" />
 			</model>
 		</weapon>
 	</weapons>
 	<modifiers>
 		<modifier visible="0">
 			<effects>
-				<armor base="8"/> <!-- %armor base armor=12/12/10 -->
-				<energyUpkeep base="16.0"/> <!-- %energyUpkeep base tier=12 factor=1 -->
-				<energyCost base="160.0"/> <!-- %energyCost base tier=12 factor=0.5 -->
-				<hitpointsMax base="864.0"/> <!-- %hitpointsMax base armor=12/12/10 wounds=6 -->
-				<cargoSlotsRequired base="0"/>
-				<moraleMax base="10"/> <!-- %moraleMax base leadership=8 -->
-				<movementMax base="5"/>
-				<oreCost base="160.0"/> <!-- %oreCost base tier=12 factor=0.5 -->
-				<productionCost base="72.0"/> <!-- %productionCost base tier=12 factor=1 -->
-				<rangedAccuracy base="8"/> <!-- %rangedAccuracy base ballisticSkill=4 -->
+				<armor base="8" /> 
+				<energyUpkeep base="16.0" /> 
+				<energyCost base="160.0" /> 
+				<hitpointsMax base="864.0" /> 
+				<cargoSlotsRequired base="0" />
+				<moraleMax base="10" /> 
+				<movementMax base="5" />
+				<oreCost base="160.0" /> 
+				<productionCost base="72.0" /> 
+				<rangedAccuracy base="8" /> 
 			</effects>
 		</modifier>
 	</modifiers>
 	<strategyModifiers>
 		<modifier>
 			<effects>
-				<increaseAircraftScore base="1.0"/>
+				<increaseAircraftScore base="1.0" />
 			</effects>
 		</modifier>
 	</strategyModifiers>
 	<actions>
 		<attack>
 			<model>
-				<action animation="Units/Tau/TigerSharkAttack"
-						beginFire="1" endFire="2.33"/>
+				<action animation="Units/Tau/TigerSharkAttack" beginFire="1" endFire="2.33" />
 			</model>				
 		</attack>
 		<die>
 			<model>
-				<action animation="Units/Tau/TigerSharkDie0"
-						sound="Units/Tau/VehicleDie"
-						soundCount="1"
-						soundDelay="0"/>
+				<action animation="Units/Tau/TigerSharkDie0" sound="Units/Tau/VehicleDie" soundCount="1" soundDelay="0" />
 			</model>		
 		</die>
 		<move>
 			<model>
-				<action sound="Units/Tau/FlyerMove"
-						soundCount="1"/>
+				<action sound="Units/Tau/FlyerMove" soundCount="1" />
 			</model>				
 		</move>
 		<auraOfFear passive="1">
@@ -117,7 +82,7 @@
 							<modifiers>
 								<modifier>
 									<effects>
-										<addTrait name="Fear"/>
+										<addTrait name="Fear" />
 									</effects>
 								</modifier>
 							</modifiers>
@@ -126,10 +91,9 @@
 				</selfTarget>
 			</beginTargets>
 		</auraOfFear>
-		<supersonic consumedMovement="0"
-				cooldown="3">
+		<supersonic consumedMovement="0" cooldown="3">
 			<model>
-				<action sound="Actions/ChargeUp"/>
+				<action sound="Actions/ChargeUp" />
 			</model>
 			<beginTargets>
 				<selfTarget>
@@ -138,7 +102,7 @@
 							<modifiers>
 								<modifier>
 									<effects>
-										<addTrait duration="1" name="Supersonic"/>
+										<addTrait duration="1" name="Supersonic" />
 									</effects>
 								</modifier>
 							</modifiers>
@@ -147,14 +111,13 @@
 				</selfTarget>
 			</beginTargets>
 		</supersonic>
-		<jink consumedActionPoints="0" consumedMovement="0" requiredActionPoints="0" cooldown="3"
-				enabled="0" visible="0">
+		<jink consumedActionPoints="0" consumedMovement="0" requiredActionPoints="0" cooldown="3" enabled="0" visible="0">
 			<model>
-				<action sound="Actions/ChargeUp"/>
+				<action sound="Actions/ChargeUp" />
 			</model>
 			<conditions>
 				<unit>
-					<notAttackedThisTurn/>
+					<notAttackedThisTurn />
 				</unit>
 			</conditions>
 			<beginTargets>
@@ -164,7 +127,7 @@
 							<modifiers>
 								<modifier>
 									<effects>
-										<addTrait duration="1" name="Jink"/>
+										<addTrait duration="1" name="Jink" />
 									</effects>
 								</modifier>
 							</modifiers>
@@ -173,41 +136,32 @@
 				</selfTarget>
 			</beginTargets>
 		</jink>
-		<cycleWeapon interfaceSound="Interface/CycleWeapon" 
-				weaponSlotNames="TwinLinkedIonCannonStandard TwinLinkedIonCannonOvercharged"/>
-		<useWeapon cooldown="5" 
-				consumedActionPoints="0"
-				requiredActionPoints="0"
-				weaponSlotName="SeekerMissile0">
+		<cycleWeapon interfaceSound="Interface/CycleWeapon" weaponSlotNames="TwinLinkedIonCannonStandard TwinLinkedIonCannonOvercharged" />
+		<useWeapon cooldown="5" consumedActionPoints="0" requiredActionPoints="0" weaponSlotName="SeekerMissile0">
 			<model>
-				<action	animation="Units/Tau/TigerSharkAttack"
-						beginFire="1" endFire="2.33"/>
+				<action animation="Units/Tau/TigerSharkAttack" beginFire="1" endFire="2.33" />
 			</model>				
 		</useWeapon>
-		<useWeapon cooldown="5" 
-				consumedActionPoints="0"
-				requiredActionPoints="0"
-				weaponSlotName="SeekerMissile1">
+		<useWeapon cooldown="5" consumedActionPoints="0" requiredActionPoints="0" weaponSlotName="SeekerMissile1">
 			<model>
-				<action	animation="Units/Tau/TigerSharkAttack"
-						beginFire="1" endFire="2.33"/>
+				<action animation="Units/Tau/TigerSharkAttack" beginFire="1" endFire="2.33" />
 			</model>				
 		</useWeapon>
 	</actions>
 	<traits>
-		<trait name="Flyer"/>
-		<trait name="StrafingRun"/>
-		<trait name="SuperHeavy"/>
-		<trait name="Vehicle"/>
-		<trait name="Tau/NetworkedMarkerlight"/>
-		<trait name="ExtraVehicleArmour" requiredUpgrade="Tau/ExtraVehicleArmour"/>
-		<trait name="Tau/AdvancedTargetingSystem" requiredUpgrade="Tau/AdvancedTargetingSystem"/>
-		<trait name="Tau/AutomatedRepairSystem" requiredUpgrade="Tau/AutomatedRepairSystem"/>
-		<trait name="Tau/BlacksunFilter" requiredUpgrade="Tau/BlacksunFilter"/>
-		<trait name="Tau/DisruptionPod" requiredUpgrade="Tau/DisruptionPod"/>
-		<trait name="Tau/FlechetteDischarger" requiredUpgrade="Tau/FlechetteDischarger"/>
-		<trait name="Tau/PointDefenceTargetingRelay" requiredUpgrade="Tau/PointDefenceTargetingRelay"/>
-		<trait name="Oomph"/>
-		<trait name="Tier4"/>
+		<trait name="Flyer" />
+		<trait name="StrafingRun" />
+		<trait name="SuperHeavy" />
+		<trait name="Vehicle" />
+		<trait name="Tau/NetworkedMarkerlight" />
+		<trait name="ExtraVehicleArmour" requiredUpgrade="Tau/ExtraVehicleArmour" />
+		<trait name="Tau/AdvancedTargetingSystem" requiredUpgrade="Tau/AdvancedTargetingSystem" />
+		<trait name="Tau/AutomatedRepairSystem" requiredUpgrade="Tau/AutomatedRepairSystem" />
+		<trait name="Tau/BlacksunFilter" requiredUpgrade="Tau/BlacksunFilter" />
+		<trait name="Tau/DisruptionPod" requiredUpgrade="Tau/DisruptionPod" />
+		<trait name="Tau/FlechetteDischarger" requiredUpgrade="Tau/FlechetteDischarger" />
+		<trait name="Tau/PointDefenceTargetingRelay" requiredUpgrade="Tau/PointDefenceTargetingRelay" />
+		<trait name="Oomph" />
+		<trait name="Tier4" />
 	</traits>
 </unit>

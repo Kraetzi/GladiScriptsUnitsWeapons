@@ -1,18 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <weapon>
 	<model>
-		<weapon fireSound="Weapons/GreaterCleaverOfKhorne"
-				fireSoundCount="2"/>
+		<weapon fireSound="Weapons/GreaterCleaverOfKhorne" fireSoundCount="2" />
 	</model>
 	<modifiers>
 		<modifier>
 			<effects>
-				<meleeArmorPenetration add="8"/> <!-- %meleeArmorPenetration add armorPiercing=1 -->
+				<meleeArmorPenetration add="8" /> 
 			</effects>
 		</modifier>
 	</modifiers>
 	<traits>
-		<trait name="DestroyerWeapon"/>
-		<trait name="Melee"/>
+		<trait name="DestroyerWeapon" />
+		<trait name="Melee" />
 	</traits>
 </weapon>

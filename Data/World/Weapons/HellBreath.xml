@@ -1,26 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <weapon>
 	<model>
-		<flamerWeapon fireSound="Weapons/Flamer"
-				fireSoundCount="3"/>
+		<flamerWeapon fireSound="Weapons/Flamer" fireSoundCount="3" />
 	</model>
 	<modifiers>
 		<modifier>
 			<effects>
-				<attacks add="1"/>
-				<rangedArmorPenetration add="1"/>
-				<rangedDamage add="0.2"/>
-				<strengthDamage set="1"/>
+				<attacks add="1" />
+				<rangedArmorPenetration add="1" />
+				<rangedDamage add="0.2" />
+				<strengthDamage set="1" />
 			</effects>
 		</modifier>
 	</modifiers>
-	<target rangeMax="1"/>
+	<target rangeMax="1" />
 	<traits>
-		<trait name="IgnoresCover"/>
-		<trait name="NoEscape"/>
-		<trait name="PsychicPower"/>
-		<trait name="SoulBlaze"/>
-		<trait name="Template"/>
-		<trait name="Witchfire"/>
+		<trait name="IgnoresCover" />
+		<trait name="NoEscape" />
+		<trait name="PsychicPower" />
+		<trait name="SoulBlaze" />
+		<trait name="Template" />
+		<trait name="Witchfire" />
 	</traits>
 </weapon>

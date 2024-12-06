@@ -1,28 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <weapon icon="Weapons/ParasiticalBreath">
 	<model>
-		<flamerWeapon fireSound="Weapons/ToxicMiasma"
-				fireSoundCount="3"
-				flamesBlueprint="Effects/ToxicMiasma"
-				flamesEmitterBlueprint="Effects/ToxicMiasmaEmitter"/>
+		<flamerWeapon fireSound="Weapons/ToxicMiasma" fireSoundCount="3" flamesBlueprint="Effects/ToxicMiasma" flamesEmitterBlueprint="Effects/ToxicMiasmaEmitter" />
 	</model>
 	<modifiers>
 		<modifier>
 			<effects>
-				<attacks add="1"/>
-				<rangedAccuracy set="10"/>
-				<rangedArmorPenetration add="0"/> <!-- %rangedArmorPenetration add armorPiercing=- -->
-				<rangedDamage add="1"/> <!-- %rangedDamage add strength=3 -->
+				<attacks add="1" />
+				<rangedAccuracy set="10" />
+				<rangedArmorPenetration add="0" /> 
+				<rangedDamage add="1" /> 
 			</effects>
 		</modifier>
 	</modifiers>
-	<target rangeMax="1"/>
+	<target rangeMax="1" />
 	<traits>
-		<trait name="Tyranids/Biomorph"/>
-		<trait name="Tyranids/BiomorphDamage" requiredUpgrade="Tyranids/BiomorphDamage"/>
-		<trait name="IgnoresCover"/>
-		<trait name="NoEscape"/>
-		<!-- <trait name="Poisoned" rank="2"/> --> <!-- The only use instance of this weapon is on a unit that has Poisoned himself. -->
-		<trait name="Template"/>
+		<trait name="Tyranids/Biomorph" />
+		<trait name="Tyranids/BiomorphDamage" requiredUpgrade="Tyranids/BiomorphDamage" />
+		<trait name="IgnoresCover" />
+		<trait name="NoEscape" />
+		 
+		<trait name="Template" />
 	</traits>
 </weapon>

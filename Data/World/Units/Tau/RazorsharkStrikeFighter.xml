@@ -1,98 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <unit dlc="Supplement5">
 	<model>
-		<unit mesh="Units/Tau/RazorsharkStrikeFighter"
-				material="Units/Tau/RazorsharkStrikeFighter"
-				position="0 0 228"
-				idleAnimation="Units/Tau/RazorsharkStrikeFighterIdle"
-				idleAnimationCount="3"
-				idleContinuously="1"
-				normalWeight="1.0"
-				scale="0.36 0.36 0.36"
-				explosionsBone="Hull"/>
+		<unit mesh="Units/Tau/RazorsharkStrikeFighter" material="Units/Tau/RazorsharkStrikeFighter" position="0 0 228" idleAnimation="Units/Tau/RazorsharkStrikeFighterIdle" idleAnimationCount="3" idleContinuously="1" normalWeight="1.0" scale="0.36 0.36 0.36" explosionsBone="Hull" />
 	</model>
-		<group size="6" rowSize="3" memberDeltaX="80" memberDeltaY="80"/>	
+		<group size="6" rowSize="3" memberDeltaX="80" memberDeltaY="80" />	
 	<weapons>
-		<weapon name="QuadIonTurretStandard"
-				slotName="QuadIonTurretStandard">
+		<weapon name="QuadIonTurretStandard" slotName="QuadIonTurretStandard">
 			<model>
-				<beamWeapon muzzleBone=".TurretMuzzle" muzzleCount="2"
-						effectFaceWeight="0.75"/>
+				<beamWeapon muzzleBone=".TurretMuzzle" muzzleCount="2" effectFaceWeight="0.75" />
 			</model>
 		</weapon>			
-		<weapon name="QuadIonTurretOvercharged"
-				slotName="QuadIonTurretOvercharged"
-				enabled="0">
+		<weapon name="QuadIonTurretOvercharged" slotName="QuadIonTurretOvercharged" enabled="0">
 			<model>
-				<beamWeapon muzzleBone=".TurretMuzzle" muzzleCount="2"
-						effectFaceWeight="0.75"/>
+				<beamWeapon muzzleBone=".TurretMuzzle" muzzleCount="2" effectFaceWeight="0.75" />
 			</model>
 		</weapon>
 		<weapon name="BurstCannon">
 			<model>
-				<projectileWeapon muzzleBone=".Muzzle"/>
+				<projectileWeapon muzzleBone=".Muzzle" />
 			</model>
 		</weapon>
-		<weapon name="SeekerMissile" count="2" enabled="0"
-				 slotName="SeekerMissile">
+		<weapon name="SeekerMissile" count="2" enabled="0" slotName="SeekerMissile">
 			<model>
-				<missileWeapon muzzleBone=".MissileMuzzle"
-						muzzleCount="2"
-						missileScale="0.8"
-						fireInterval="1.4"/>
+				<missileWeapon muzzleBone=".MissileMuzzle" muzzleCount="2" missileScale="0.8" fireInterval="1.4" />
 			</model>	
 		</weapon>
 	</weapons>
 	<modifiers>
 		<modifier visible="0">
 			<effects>
-				<armor base="6"/> <!-- %armor base armor=11/10/10 -->
-				<energyUpkeep base="3.0"/> <!-- %energyUpkeep base tier=7 factor=1 -->
-				<energyCost base="30.0"/> <!-- %energyCost base tier=7 factor=0.5 -->
-				<hitpointsMax base="72.0"/> <!-- %hitpointsMax base armor=11/10/10 wounds=3 -->
-				<moraleMax base="6"/> <!-- %moraleMax base leadership=6 -->
-				<movementMax base="6"/>
-				<oreCost base="30.0"/> <!-- %oreCost base tier=7 factor=0.5 -->
-				<productionCost base="42.0"/> <!-- %productionCost base tier=7 factor=1 -->
-				<rangedAccuracy base="6"/> <!-- %rangedAccuracy base ballisticSkill=3 -->
+				<armor base="6" /> 
+				<energyUpkeep base="3.0" /> 
+				<energyCost base="30.0" /> 
+				<hitpointsMax base="72.0" /> 
+				<moraleMax base="6" /> 
+				<movementMax base="6" />
+				<oreCost base="30.0" /> 
+				<productionCost base="42.0" /> 
+				<rangedAccuracy base="6" /> 
 			</effects>
 		</modifier>
 	</modifiers>
 	<strategyModifiers>
 		<modifier>
 			<effects>
-				<increaseAircraftScore base="1.0"/>
+				<increaseAircraftScore base="1.0" />
 			</effects>
 		</modifier>
 	</strategyModifiers>
 	<actions>
 		<attack>
 			<model>
-				<action animation="Units/Tau/RazorsharkStrikeFighterAttack"
-						beginFire="1" endFire="2.2"/>
+				<action animation="Units/Tau/RazorsharkStrikeFighterAttack" beginFire="1" endFire="2.2" />
 			</model>				
 		</attack>
 		<die>
 			<model>
-				<action animation="Units/Tau/RazorsharkStrikeFighterDie0"
-						sound="Units/Tau/VehicleDie"
-						soundCount="1"
-						soundDelay="0"/>
+				<action animation="Units/Tau/RazorsharkStrikeFighterDie0" sound="Units/Tau/VehicleDie" soundCount="1" soundDelay="0" />
 			</model>
 		</die>
 		<move>
 			<model>
-				<action sound="Units/Tau/FlyerMove"
-						soundCount="1"/>
+				<action sound="Units/Tau/FlyerMove" soundCount="1" />
 			</model>
 		</move>
 		<jink consumedActionPoints="0" consumedMovement="0" requiredActionPoints="0" cooldown="3">
 			<model>
-				<action sound="Actions/ChargeUp"/>
+				<action sound="Actions/ChargeUp" />
 			</model>
 			<conditions>
 				<unit>
-					<notAttackedThisTurn/>
+					<notAttackedThisTurn />
 				</unit>
 			</conditions>
 			<beginTargets>
@@ -102,7 +80,7 @@
 							<modifiers>
 								<modifier>
 									<effects>
-										<addTrait duration="1" name="Jink"/>
+										<addTrait duration="1" name="Jink" />
 									</effects>
 								</modifier>
 							</modifiers>
@@ -111,28 +89,24 @@
 				</selfTarget>
 			</beginTargets>
 		</jink>
-		<cycleWeapon interfaceSound="Interface/CycleWeapon" 
-				weaponSlotNames="QuadIonTurretStandard QuadIonTurretOvercharged"/>
-		<useWeapon cooldown="5" 
-				consumedActionPoints="0"
-				requiredActionPoints="0"
-				weaponSlotName="SeekerMissile">
+		<cycleWeapon interfaceSound="Interface/CycleWeapon" weaponSlotNames="QuadIonTurretStandard QuadIonTurretOvercharged" />
+		<useWeapon cooldown="5" consumedActionPoints="0" requiredActionPoints="0" weaponSlotName="SeekerMissile">
 			<model>
-				<action beginFire="1" endFire="2.2"/>
+				<action beginFire="1" endFire="2.2" />
 			</model>				
 		</useWeapon>
 	</actions>
 	<traits>
-		<trait name="Flyer"/>
-		<trait name="Vehicle"/>
-		<trait name="ExtraVehicleArmour" requiredUpgrade="Tau/ExtraVehicleArmour"/>
-		<trait name="Tau/AdvancedTargetingSystem" requiredUpgrade="Tau/AdvancedTargetingSystem"/>
-		<trait name="Tau/AutomatedRepairSystem" requiredUpgrade="Tau/AutomatedRepairSystem"/>
-		<trait name="Tau/BlacksunFilter" requiredUpgrade="Tau/BlacksunFilter"/>
-		<trait name="Tau/DisruptionPod" requiredUpgrade="Tau/DisruptionPod"/>
-		<trait name="Tau/FlechetteDischarger" requiredUpgrade="Tau/FlechetteDischarger"/>
-		<trait name="Tau/PointDefenceTargetingRelay" requiredUpgrade="Tau/PointDefenceTargetingRelay"/>
-		<trait name="Armfilade"/>
-		<trait name="Tier3"/>
+		<trait name="Flyer" />
+		<trait name="Vehicle" />
+		<trait name="ExtraVehicleArmour" requiredUpgrade="Tau/ExtraVehicleArmour" />
+		<trait name="Tau/AdvancedTargetingSystem" requiredUpgrade="Tau/AdvancedTargetingSystem" />
+		<trait name="Tau/AutomatedRepairSystem" requiredUpgrade="Tau/AutomatedRepairSystem" />
+		<trait name="Tau/BlacksunFilter" requiredUpgrade="Tau/BlacksunFilter" />
+		<trait name="Tau/DisruptionPod" requiredUpgrade="Tau/DisruptionPod" />
+		<trait name="Tau/FlechetteDischarger" requiredUpgrade="Tau/FlechetteDischarger" />
+		<trait name="Tau/PointDefenceTargetingRelay" requiredUpgrade="Tau/PointDefenceTargetingRelay" />
+		<trait name="Armfilade" />
+		<trait name="Tier3" />
 	</traits>
 </unit>

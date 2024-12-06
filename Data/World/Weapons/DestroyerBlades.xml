@@ -1,29 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <weapon>
 	<model>
-		<weapon/>
+		<weapon />
 	</model>
 	<modifiers>
 		<modifier>
 			<effects>
-				<meleeAttacks base="3"/>
-				<meleeAccuracy min="12"/> <!-- Don't roll to hit. -->
-				<meleeArmorPenetration add="0"/> <!-- %meleeArmorPenetration add armorPiercing=- -->
-				<strengthDamage base="2"/> <!-- %strengthDamage base strength=5 -->
+				<meleeAttacks base="3" />
+				<meleeAccuracy min="12" /> 
+				<meleeArmorPenetration add="0" /> 
+				<strengthDamage base="2" /> 
 			</effects>
 		</modifier>
 	</modifiers>
 	<target rangeMax="1">
 		<conditions>
 			<unit>
-				<noTrait name="Flyer"/>
-				<noTrait name="Fortification"/>
-				<noTrait name="Vehicle"/>
+				<noTrait name="Flyer" />
+				<noTrait name="Fortification" />
+				<noTrait name="Vehicle" />
 			</unit>
 		</conditions>
 	</target>
 	<traits>
-		<trait name="Melee"/>
-		<trait name="ThousandSons/MeleeDamage" requiredUpgrade="ThousandSons/MeleeDamage"/>
+		<trait name="Melee" />
+		<trait name="ThousandSons/MeleeDamage" requiredUpgrade="ThousandSons/MeleeDamage" />
 	</traits>
 </weapon>

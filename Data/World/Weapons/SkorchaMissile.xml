@@ -1,26 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <weapon>
 	<model>
-		<missileWeapon fireSound="Weapons/SkorchaMissile"
-				fireSoundCount="4"/>
+		<missileWeapon fireSound="Weapons/SkorchaMissile" fireSoundCount="4" />
 	</model>
 	<modifiers>
 		<modifier>
 			<effects>
-				<attacks add="2"/>
-				<rangedArmorPenetration add="2"/> <!-- %rangedArmorPenetration add armorPiercing=4 -->
-				<rangedDamage add="2"/> <!-- %rangedDamage add strength=5 -->
-				<strengthDamage base="0"/>
+				<attacks add="2" />
+				<rangedArmorPenetration add="2" /> 
+				<rangedDamage add="2" /> 
+				<strengthDamage base="0" />
 			</effects>
 		</modifier>
 	</modifiers>
-	<target rangeMax="2"/>
+	<target rangeMax="2" />
 	<traits>
-		<trait name="Blast"/>
-		<trait name="AstraMilitarum/BlastDamage" requiredUpgrade="AstraMilitarum/BlastDamage"/>
-		<trait name="Orks/BlastDamage" requiredUpgrade="Orks/BlastDamage"/>
-		<trait name="SpaceMarines/BlastDamage" requiredUpgrade="SpaceMarines/BlastDamage"/>
-		<trait name="HeavyWeapon"/>
-		<trait name="IgnoresCover"/>
+		<trait name="Blast" />
+		<trait name="AstraMilitarum/BlastDamage" requiredUpgrade="AstraMilitarum/BlastDamage" />
+		<trait name="Orks/BlastDamage" requiredUpgrade="Orks/BlastDamage" />
+		<trait name="SpaceMarines/BlastDamage" requiredUpgrade="SpaceMarines/BlastDamage" />
+		<trait name="HeavyWeapon" />
+		<trait name="IgnoresCover" />
 	</traits>
 </weapon>

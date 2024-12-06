@@ -5,6 +5,7 @@ import os
 unit_modifications = {
     "terminator": {"scale_multiplier": 2, "group_size_divisor": 2, "hitpoints_divisor": 2},
     "dreadnought": {"scale_multiplier": 2, "group_size_divisor": 1, "hitpoints_divisor": 1.5},
+    "firewarrior": {"scale_multiplier": 3, "group_size_divisor": 2, "hitpoints_divisor": 1.5},
     # Add more units here with their specific modifications
 }
 
